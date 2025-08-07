@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/user/Desktop/AzPayGo/azpaygo/app/layout.tsx"],"sourcesContent":["import \"../app/Styles/globals.css\"; // or whatever your filename is\r\n"],"names":[],"mappings":";;;;;;;CAAoC,+BAA+B","debugId":null}}]
+}

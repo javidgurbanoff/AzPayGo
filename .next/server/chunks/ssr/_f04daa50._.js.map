@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/user/Desktop/AzPayGo/azpaygo/app/layout.tsx"],"sourcesContent":["import \"./globals.css\"; // ✅ correct relative path\r\n\r\nexport default function RootLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  return (\r\n    <html lang=\"en\">\r\n      <body>{children}</body>\r\n    </html>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGT;IACC,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;sBAAM;;;;;;;;;;;AAGb","debugId":null}},
+    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/user/Desktop/AzPayGo/azpaygo/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}
