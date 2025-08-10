@@ -1,6 +1,11 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/explore/page": "app/explore/page.js",
-  "/page": "app/page.js"
+  "/blog/page": "app/blog/page.js",
+  "/campaigns/page": "app/campaigns/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/feedback/page": "app/feedback/page.js",
+  "/page": "app/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/profile/page": "app/profile/page.js"
 }

@@ -5,6 +5,7 @@ import Stepper, { Step } from "../components/Stepper";
 import Navbar from "../components/Navbar";
 import { Leapfrog } from "ldrs/react";
 import { Switch } from "@headlessui/react";
+import Footer from "../features/Footer/footer";
 
 export default function About() {
   const [email, setEmail] = useState("");
@@ -24,6 +25,34 @@ export default function About() {
   return (
     <div>
       <Navbar />
+      <div className="flex flex-col  items-center justify-between gap-10 p-6">
+        <div className="md:w-1/2">
+          <h1 className="text-5xl md:text-6xl font-semibold text-[#0B1F3A] italic mb-6">
+            Bizim Haqqımızda
+          </h1>
+          <p className="text-[#1A73E8] text-lg leading-relaxed">
+            <span className="font-bold">AzPaygo</span> — sadəcə bir ödəniş
+            sistemi deyil, həyatınızı asanlaşdıran rəqəmsal yoldaşdır. Biz
+            maliyyə əməliyyatlarını
+            <span className="font-semibold"> sürətli, təhlükəsiz </span> və
+            <span className="font-semibold"> intuitiv </span> etmək üçün
+            buradayıq.
+            <br />
+            <br />
+            Fərdi istifadəçilər, kiçik biznes sahibləri və böyük müəssisələr
+            üçün hazırlanmış platformamızla ödənişlər heç vaxt bu qədər rahat
+            olmamışdı. Siz AzPaygo ilə vaxtınıza qənaət edir, etibarlı
+            texnologiyamızla gələcəyə doğru addımlayırsınız.
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <img
+            src="https://i.pinimg.com/736x/b8/aa/99/b8aa99973bf24bf81ab29ad588899789.jpg"
+            alt="About AzPaygo"
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
       <div className="p-4">
         {!showLoader && !completed && (
           <Stepper
@@ -97,6 +126,7 @@ export default function About() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
