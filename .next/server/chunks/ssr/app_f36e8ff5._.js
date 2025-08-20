@@ -340,6 +340,14 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa6/index.mjs [app-ssr] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/app/components/buttons/app-store-buttons'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
+;
+;
+;
 ;
 ;
 ;
@@ -360,7 +368,7 @@ const Footer = ()=>{
                                 children: "AzPayGo"
                             }, void 0, false, {
                                 fileName: "[project]/app/features/Footer/footer.tsx",
-                                lineNumber: 12,
+                                lineNumber: 14,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -373,12 +381,12 @@ const Footer = ()=>{
                                             children: "Haqqımızda"
                                         }, void 0, false, {
                                             fileName: "[project]/app/features/Footer/footer.tsx",
-                                            lineNumber: 17,
+                                            lineNumber: 19,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 16,
+                                        lineNumber: 18,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -388,12 +396,12 @@ const Footer = ()=>{
                                             children: "Niyə AzPayGo"
                                         }, void 0, false, {
                                             fileName: "[project]/app/features/Footer/footer.tsx",
-                                            lineNumber: 20,
+                                            lineNumber: 22,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 19,
+                                        lineNumber: 21,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -403,12 +411,12 @@ const Footer = ()=>{
                                             children: "Blog"
                                         }, void 0, false, {
                                             fileName: "[project]/app/features/Footer/footer.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 25,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 22,
+                                        lineNumber: 24,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -418,12 +426,12 @@ const Footer = ()=>{
                                             children: "Xəbərlər"
                                         }, void 0, false, {
                                             fileName: "[project]/app/features/Footer/footer.tsx",
-                                            lineNumber: 26,
+                                            lineNumber: 28,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 27,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -433,24 +441,24 @@ const Footer = ()=>{
                                             children: "Feedback"
                                         }, void 0, false, {
                                             fileName: "[project]/app/features/Footer/footer.tsx",
-                                            lineNumber: 29,
+                                            lineNumber: 31,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 28,
+                                        lineNumber: 30,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/features/Footer/footer.tsx",
-                                lineNumber: 15,
+                                lineNumber: 17,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/features/Footer/footer.tsx",
-                        lineNumber: 11,
+                        lineNumber: 13,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -465,12 +473,12 @@ const Footer = ()=>{
                                         children: "Abunəlik"
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 37,
+                                        lineNumber: 39,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/features/Footer/footer.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -480,12 +488,12 @@ const Footer = ()=>{
                                         children: "Asan POS"
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 42,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/features/Footer/footer.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -495,12 +503,12 @@ const Footer = ()=>{
                                         children: "Birdən çox pul köçürmələri"
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 45,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/features/Footer/footer.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -510,12 +518,12 @@ const Footer = ()=>{
                                         children: "Kampanyalar"
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 46,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/features/Footer/footer.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -525,12 +533,12 @@ const Footer = ()=>{
                                         children: "AzPayGo ilə ödə"
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 51,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/features/Footer/footer.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -540,23 +548,23 @@ const Footer = ()=>{
                                         children: "FAQ"
                                     }, void 0, false, {
                                         fileName: "[project]/app/features/Footer/footer.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/features/Footer/footer.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 53,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/features/Footer/footer.tsx",
-                            lineNumber: 35,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/app/features/Footer/footer.tsx",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -568,7 +576,7 @@ const Footer = ()=>{
                                 children: "Privacy"
                             }, void 0, false, {
                                 fileName: "[project]/app/features/Footer/footer.tsx",
-                                lineNumber: 58,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -577,7 +585,7 @@ const Footer = ()=>{
                                 children: "Terms"
                             }, void 0, false, {
                                 fileName: "[project]/app/features/Footer/footer.tsx",
-                                lineNumber: 61,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -586,7 +594,7 @@ const Footer = ()=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "[project]/app/features/Footer/footer.tsx",
-                                lineNumber: 64,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -595,19 +603,19 @@ const Footer = ()=>{
                                 children: "Contribute"
                             }, void 0, false, {
                                 fileName: "[project]/app/features/Footer/footer.tsx",
-                                lineNumber: 67,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/features/Footer/footer.tsx",
-                        lineNumber: 57,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/features/Footer/footer.tsx",
-                lineNumber: 10,
+                lineNumber: 12,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -619,52 +627,67 @@ const Footer = ()=>{
                             className: "cursor-pointer hover:text-blue-500 transition-colors"
                         }, void 0, false, {
                             fileName: "[project]/app/features/Footer/footer.tsx",
-                            lineNumber: 74,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaInstagram"], {
                             className: "cursor-pointer hover:text-pink-500 transition-colors"
                         }, void 0, false, {
                             fileName: "[project]/app/features/Footer/footer.tsx",
-                            lineNumber: 75,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaLinkedin"], {
                             className: "cursor-pointer hover:text-blue-400 transition-colors"
                         }, void 0, false, {
                             fileName: "[project]/app/features/Footer/footer.tsx",
-                            lineNumber: 76,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaXTwitter"], {
                             className: "cursor-pointer hover:text-gray-400 transition-colors"
                         }, void 0, false, {
                             fileName: "[project]/app/features/Footer/footer.tsx",
-                            lineNumber: 77,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "© 2025 AzPayGo"
                         }, void 0, false, {
                             fileName: "[project]/app/features/Footer/footer.tsx",
-                            lineNumber: 78,
+                            lineNumber: 80,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AppStoreButton, {}, void 0, false, {
+                            fileName: "[project]/app/features/Footer/footer.tsx",
+                            lineNumber: 81,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(GalaxyStoreButton, {}, void 0, false, {
+                            fileName: "[project]/app/features/Footer/footer.tsx",
+                            lineNumber: 82,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(GooglePlayButton, {}, void 0, false, {
+                            fileName: "[project]/app/features/Footer/footer.tsx",
+                            lineNumber: 83,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/features/Footer/footer.tsx",
-                    lineNumber: 73,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/app/features/Footer/footer.tsx",
-                lineNumber: 72,
+                lineNumber: 74,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/features/Footer/footer.tsx",
-        lineNumber: 9,
+        lineNumber: 11,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -705,7 +728,7 @@ function Home() {
                         "Rahat",
                         "Təhlükəsiz",
                         "Ağıllı",
-                        "AzPaygo"
+                        "AzPayGo"
                     ],
                     mainClassName: "text-[#0B1F3A] font-bold text-5xl transition-colors duration-100",
                     initial: {

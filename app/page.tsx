@@ -4,6 +4,7 @@ import React from "react";
 import Header from "./features/Header/header";
 import Navbar from "./components/Navbar";
 import RotatingText from "./components/RotatingText";
+
 import Footer from "./features/Footer/footer";
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
             "Rahat",
             "Təhlükəsiz",
             "Ağıllı",
-            "AzPaygo",
+            "AzPayGo",
           ]}
           mainClassName="text-[#0B1F3A] font-bold text-5xl transition-colors duration-100"
           initial={{ y: "100%" }}

@@ -6,9 +6,12 @@ import Footer from "../features/Footer/footer";
 
 export default function Explore() {
   return (
-    <div className="">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <div className="">Explore</div>
+      <main className="flex-grow flex items-center justify-center">
+        <h1 className="text-3xl">Explore</h1>
+      </main>
+      <Footer />
     </div>
   );
 }

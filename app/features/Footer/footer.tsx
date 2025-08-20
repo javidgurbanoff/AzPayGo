@@ -3,7 +3,11 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
+import { AppStoreButton } from "@/app/components/buttons/app-store-buttons";
+import { GalaxyStoreButton } from "@/app/components/buttons/app-store-buttons";
+import { GooglePlayButton } from "@/app/components/buttons/app-store-buttons";
+import { RatingBadge } from "@/app/components/foundations/rating-badge";
+import { QRCode } from "@/app/components/shared-assets/qr-code";
 const Footer = () => {
   return (
     <footer className="bg-[#0B1F3A] text-white py-10 px-4">
@@ -71,11 +75,22 @@ const Footer = () => {
       </div>
       <div className=" pt-10 items-center justify-center pl-8 pr-8 ">
         <div className="flex space-x-4 text-white text-xl pt-10 border-t-2 border-white w-full items-center justify-center gap-5 ">
+          <p>© 2025 AzPayGo</p>
+
           <FaFacebook className="cursor-pointer hover:text-blue-500 transition-colors" />
           <FaInstagram className="cursor-pointer hover:text-pink-500 transition-colors" />
           <FaLinkedin className="cursor-pointer hover:text-blue-400 transition-colors" />
           <FaXTwitter className="cursor-pointer hover:text-gray-400 transition-colors" />
-          <p>© 2025 AzPayGo</p>
+          <AppStoreButton />
+          <GalaxyStoreButton />
+          <GooglePlayButton />
+          <RatingBadge />
+
+          <QRCode
+            className="cursor-pointer"
+            value="https://example.com"
+            size="lg"
+          />
         </div>
       </div>
     </footer>
