@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../features/Footer/footer";
+import Footer from "@/app/features/Footer/footer";
 
 const PricingCard = () => {
   return (

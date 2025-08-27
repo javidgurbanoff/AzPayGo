@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Stepper, { Step } from "../components/Stepper";
-import Navbar from "../components/Navbar";
+import Stepper, { Step } from "../components/ui/Stepper";
+import Navbar from "../components/ui/Navbar";
 import { Leapfrog } from "ldrs/react";
 import { Switch } from "@headlessui/react";
 import Footer from "../features/Footer/footer";

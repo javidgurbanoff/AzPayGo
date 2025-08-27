@@ -57,6 +57,28 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        <div className=" text-gray-400">
+          <ul className="space-y-5 text-m text-gray-300">
+            <li className="hover:text-white cursor-pointer">
+              <a href="/tutorial">Tutorial</a>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <a href="#why">AzPayGo Mobile</a>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <a href="/pricing">Pricing</a>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <a href="/explore">Explore</a>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <a href="/contact">Contact</a>
+            </li>
+            <li className="hover:text-white cursor-pointer">
+              <a href="/settings">Settings</a>
+            </li>
+          </ul>
+        </div>
 
         <div className="flex flex-col md:flex-row items-center gap-4 text-m text-gray-300">
           <a href="#" className="hover:text-white">

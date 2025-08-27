@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import Footer from "../features/Footer/footer";
 export default function Campaigns() {
   return (

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import TestimonialsSection from "../components/TestimonialSection";
+import Navbar from "../components/ui/Navbar";
+import TestimonialsSection from "../components/ui/TestimonialSection";
 
 export default function Feedback() {
   return (

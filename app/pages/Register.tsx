@@ -1,7 +1,11 @@
-import React, { useState } from "react";
-import InputField from "../components/InputField";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import InputField from "../components/ui/InputField";
 
 const Register: React.FC = () => {
+  const router = useRouter();
+  const [checked, setChecked] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -9,18 +13,62 @@ const Register: React.FC = () => {
     confirmPassword: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const alreadyRegistered = localStorage.getItem("registered");
+    if (alreadyRegistered) {
+      router.replace("/login");
+    } else {
+      setChecked(true);
+    }
+  }, [router]);
+
   const handleChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match!");
       return;
     }
-    console.log("Register data:", formData);
+
+    try {
+      setLoading(true);
+
+      const res = await fetch("/api/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          password: formData.password,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        alert(data.error || "Registration failed");
+        return;
+      }
+
+      localStorage.setItem("registered", "true");
+
+      alert("Registration successful! Redirecting to login...");
+      router.replace("/login");
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong");
+    } finally {
+      setLoading(false);
+    }
   };
+
+  if (!checked) return null;
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
@@ -60,9 +108,14 @@ const Register: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="mt-6 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition"
+          disabled={loading}
+          className={`mt-6 w-full py-2 rounded-lg transition text-white ${
+            loading
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-indigo-600 hover:bg-indigo-700"
+          }`}
         >
-          Create Account
+          {loading ? "Creating Account..." : "Create Account"}
         </button>
         <p className="mt-4 text-center text-sm">
           Already have an account?{" "}
