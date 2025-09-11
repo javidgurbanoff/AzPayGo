@@ -11,7 +11,7 @@
   "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
   "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_b854acb4._.js",
   "static/chunks/node_modules_qr-code-styling_lib_qr-code-styling_c231ba0e.js",
-  "static/chunks/node_modules_a99d72f8._.js"
+  "static/chunks/node_modules_b28507cc._.js"
 ],
     source: "dynamic"
 });

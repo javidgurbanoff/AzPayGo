@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 66, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/user/Desktop/AzPayGo/azpaygo/utils/db.ts"],"sourcesContent":["import { PrismaClient } from \"@prisma/client\";\r\n\r\nconst globalForPrisma = globalThis as unknown as {\r\n  prisma: PrismaClient | undefined\r\n}\r\n\r\nconst prisma = globalForPrisma.prisma ?? new PrismaClient()\r\n\r\nif (process.env.NODE_ENV !== \"production\") globalForPrisma.prisma = prisma;\r\n \r\n\r\nexport const db = prisma"],"names":[],"mappings":";;;AAAA;;AAEA,MAAM,kBAAkB;AAIxB,MAAM,SAAS,gBAAgB,MAAM,IAAI,IAAI,6HAAA,CAAA,eAAY;AAEzD,wCAA2C,gBAAgB,MAAM,GAAG;AAG7D,MAAM,KAAK","debugId":null}}]
+}

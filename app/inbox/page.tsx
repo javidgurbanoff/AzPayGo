@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/ui/Navbar";
 import SimpleBadge from "../components/ui/mail";
+import Input from "../components/ui/Input";
 import Footer from "../features/Footer/footer";
 
 export default function Inbox() {
@@ -13,6 +14,7 @@ export default function Inbox() {
         <h1 className="text-3xl">Inbox</h1>
         <SimpleBadge />
       </main>
+      <Input />
       <Footer />
     </div>
   );

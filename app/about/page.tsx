@@ -45,6 +45,19 @@ export default function About() {
             texnologiyamızla gələcəyə doğru addımlayırsınız.
           </p>
         </div>
+        <div className="">
+          <h1 className="font-semibold text-2xl">
+            {" "}
+            Why you shoudl choose us?
+            <p className="font-semibold ">
+              {" "}
+              Delay and connection prolem can be daunting at some point. However
+              via the help of our services users will be able to transfer their
+              money across the globe safely. User only need to pay a little
+              amount of the money for subscripton process.{" "}
+            </p>
+          </h1>
+        </div>
         <div className="md:w-1/2">
           <img
             src="https://i.pinimg.com/736x/b8/aa/99/b8aa99973bf24bf81ab29ad588899789.jpg"

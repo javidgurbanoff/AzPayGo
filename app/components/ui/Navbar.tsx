@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import BasicMenu from "../ui/Dashboard";
-import { ColorModeButton } from "../ui/color-mode";
-import Image from "next/image";
+import SearchRatio from "./SearchRadio";
+import DashBoard from "./Dashboard";
+import ColorModeToggle from "./ColorModeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,6 +28,9 @@ export default function Navbar() {
           </div>
         </Link>
 
+        <section>
+          <SearchRatio />
+        </section>
         <nav className="hidden md:flex gap-6 items-center">
           {navLinks.map(({ href, label }) => (
             <Link
@@ -38,8 +41,8 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
-          <BasicMenu />
-          <ColorModeButton />
+          <DashBoard />
+          <ColorModeToggle />
         </nav>
 
         <button className="md:hidden text-white" onClick={toggleMenu}>
@@ -60,8 +63,8 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="py-2 flex flex-col gap-2">
-            <BasicMenu />
-            <ColorModeButton />
+            <DashBoard />
+            <ColorModeToggle />
           </div>
         </div>
       )}

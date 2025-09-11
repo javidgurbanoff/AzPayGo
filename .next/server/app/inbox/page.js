@@ -2,7 +2,7 @@ const CHUNK_PUBLIC_PATH = "server/app/inbox/page.js";
 const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_3a9f8461._.js");
 runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__72e60385._.js");
-runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__d6ffc936._.js");
+runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__9eb60f09._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_1c8c21fa._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_651c1c6d.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_a3bc0a28.js");

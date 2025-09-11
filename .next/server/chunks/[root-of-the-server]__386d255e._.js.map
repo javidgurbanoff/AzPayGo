@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 66, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/user/Desktop/AzPayGo/azpaygo/app/pages/api/user/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\r\n\r\nexport async function POST(req: Request){\r\n    try{\r\n     const body = await req.json()\r\n     return NextResponse.json(body)\r\n    }catch (error){\r\n\r\n    }\r\n}"],"names":[],"mappings":";;;AAAA;;AAEO,eAAe,KAAK,GAAY;IACnC,IAAG;QACF,MAAM,OAAO,MAAM,IAAI,IAAI;QAC3B,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;IAC1B,EAAC,OAAO,OAAM,CAEd;AACJ","debugId":null}}]
+}

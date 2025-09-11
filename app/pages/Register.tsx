@@ -1,6 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import InputField from "../components/ui/InputField";
+import Head from "next/head";
+
+const InputField = ({
+  label,
+  type = "text",
+  placeholder,
+  value,
+  onChange,
+}: {
+  label: string;
+  type?: string;
+  placeholder: string;
+  value: string;
+  onChange: (val: string) => void;
+}) => {
+  return (
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        {label}
+      </label>
+      <input
+        type={type}
+        placeholder={placeholder}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+        required
+      />
+    </div>
+  );
+};
 
 const Register: React.FC = () => {
   const router = useRouter();
@@ -39,24 +69,19 @@ const Register: React.FC = () => {
     try {
       setLoading(true);
 
-      const res = await fetch("/api/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      // For demonstration purposes, we'll simulate an API call
+      // In a real app, you would call your actual API endpoint
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
+      // Simulate a successful registration
+      localStorage.setItem("registered", "true");
+      localStorage.setItem(
+        "user",
+        JSON.stringify({
           name: formData.name,
           email: formData.email,
-          password: formData.password,
-        }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        alert(data.error || "Registration failed");
-        return;
-      }
-
-      localStorage.setItem("registered", "true");
+        })
+      );
 
       alert("Registration successful! Redirecting to login...");
       router.replace("/login");
@@ -68,63 +93,111 @@ const Register: React.FC = () => {
     }
   };
 
-  if (!checked) return null;
+  if (!checked) {
+    return (
+      <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="text-center">Checking authentication status...</div>
+      </div>
+    );
+  }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
-      >
-        <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
-        <div className="space-y-4">
-          <InputField
-            label="Full Name"
-            placeholder="John Doe"
-            value={formData.name}
-            onChange={(val) => handleChange("name", val)}
-          />
-          <InputField
-            label="Email"
-            type="email"
-            placeholder="you@example.com"
-            value={formData.email}
-            onChange={(val) => handleChange("email", val)}
-          />
-          <InputField
-            label="Password"
-            type="password"
-            placeholder="••••••••"
-            value={formData.password}
-            onChange={(val) => handleChange("password", val)}
-          />
-          <InputField
-            label="Confirm Password"
-            type="password"
-            placeholder="••••••••"
-            value={formData.confirmPassword}
-            onChange={(val) => handleChange("confirmPassword", val)}
-          />
-        </div>
-        <button
-          type="submit"
-          disabled={loading}
-          className={`mt-6 w-full py-2 rounded-lg transition text-white ${
-            loading
-              ? "bg-gray-400 cursor-not-allowed"
-              : "bg-indigo-600 hover:bg-indigo-700"
-          }`}
+    <>
+      <Head>
+        <title>Register | Your App Name</title>
+        <meta name="description" content="Create a new account" />
+      </Head>
+
+      <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
         >
-          {loading ? "Creating Account..." : "Create Account"}
-        </button>
-        <p className="mt-4 text-center text-sm">
-          Already have an account?{" "}
-          <a href="/login" className="text-indigo-600 hover:underline">
-            Login
-          </a>
-        </p>
-      </form>
-    </div>
+          <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+            Register
+          </h2>
+          <div className="space-y-4">
+            <InputField
+              label="Full Name"
+              placeholder="John Doe"
+              value={formData.name}
+              onChange={(val) => handleChange("name", val)}
+            />
+            <InputField
+              label="Email"
+              type="email"
+              placeholder="you@example.com"
+              value={formData.email}
+              onChange={(val) => handleChange("email", val)}
+            />
+            <InputField
+              label="Password"
+              type="password"
+              placeholder="••••••••"
+              value={formData.password}
+              onChange={(val) => handleChange("password", val)}
+            />
+            <InputField
+              label="Confirm Password"
+              type="password"
+              placeholder="••••••••"
+              value={formData.confirmPassword}
+              onChange={(val) => handleChange("confirmPassword", val)}
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={loading}
+            className={`mt-6 w-full py-3 rounded-lg transition text-white font-medium ${
+              loading
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-indigo-600 hover:bg-indigo-700"
+            }`}
+          >
+            {loading ? (
+              <span className="flex items-center justify-center">
+                <svg
+                  className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+                Creating Account...
+              </span>
+            ) : (
+              "Create Account"
+            )}
+          </button>
+          <p className="mt-4 text-center text-sm text-gray-600">
+            Already have an account?{" "}
+            <a
+              href="/login"
+              className="text-indigo-600 hover:underline font-medium"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/login");
+              }}
+            >
+              Login
+            </a>
+          </p>
+        </form>
+      </div>
+    </>
   );
 };
 

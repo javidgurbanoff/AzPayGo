@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "@/app/features/Footer/footer";
+import Link from "next/link";
 
 const PricingCard = () => {
   return (
@@ -96,15 +97,20 @@ const PricingCard = () => {
                     </div>
                   </div>
                   <div className="pt-2">
-                    <a
-                      href="/billing"
+                    <Link
+                      href="/payment"
                       type="button"
                       target="_blank"
                       className="appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer"
                     >
-                      <span className="w-full font-semibold text-base">
-                        Choose Starter
-                      </span>
+                      <div>
+                        <Link
+                          href="/payment"
+                          className="w-full font-semibold text-base"
+                        >
+                          Choose Pro
+                        </Link>
+                      </div>
                       <svg
                         className="inline-block h-6"
                         viewBox="0 0 24 25"
@@ -119,7 +125,7 @@ const PricingCard = () => {
                           strokeLinejoin="round"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="hidden">
@@ -286,15 +292,20 @@ const PricingCard = () => {
                     </div>
                   </div>
                   <div className="pt-2">
-                    <a
-                      href="/billing"
+                    <Link
+                      href="/payment"
                       type="button"
                       target="_blank"
                       className="appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer"
                     >
-                      <span className="w-full font-semibold text-base">
-                        Choose Startup
-                      </span>
+                      <div>
+                        <Link
+                          href="/payment"
+                          className="w-full font-semibold text-base"
+                        >
+                          Choose Startup
+                        </Link>
+                      </div>
                       <svg
                         className="inline-block h-6"
                         viewBox="0 0 24 25"
@@ -309,7 +320,7 @@ const PricingCard = () => {
                           strokeLinejoin="round"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="hidden">
@@ -445,15 +456,21 @@ const PricingCard = () => {
                     </div>
                   </div>
                   <div className="pt-2">
-                    <a
-                      href="/billing"
+                    <Link
+                      href="/payment"
                       type="button"
                       target="_blank"
                       className="appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer"
                     >
-                      <span className="w-full font-semibold text-base">
-                        Choose Pro
-                      </span>
+                      <div>
+                        <Link
+                          href="/payment"
+                          className="w-full font-semibold text-base"
+                        >
+                          Choose Pro
+                        </Link>
+                      </div>
+
                       <svg
                         className="inline-block h-6"
                         viewBox="0 0 24 25"
@@ -468,7 +485,7 @@ const PricingCard = () => {
                           strokeLinejoin="round"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="hidden">
@@ -621,8 +638,8 @@ const PricingCard = () => {
                     </div>
                   </div>
                   <div className="pt-2">
-                    <a
-                      href="/billing"
+                    <Link
+                      href="/"
                       type="button"
                       target="_blank"
                       className="appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer"
@@ -644,7 +661,7 @@ const PricingCard = () => {
                           strokeLinejoin="round"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="hidden lg:block">
@@ -735,8 +752,8 @@ const PricingCard = () => {
                   </div>
                 </div>
                 <div className="pt-2">
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact"
                     type="button"
                     className="appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer"
                   >
@@ -757,7 +774,7 @@ const PricingCard = () => {
                         strokeLinejoin="round"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

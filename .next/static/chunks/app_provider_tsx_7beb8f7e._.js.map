@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/user/Desktop/AzPayGo/azpaygo/app/provider.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { ThemeProvider } from \"next-themes\";\r\nimport type { ReactNode } from \"react\";\r\n\r\nexport function Providers({ children }: { children: ReactNode }) {\r\n  return (\r\n    <ThemeProvider attribute=\"class\" defaultTheme=\"light\" enableSystem={true}>\r\n      {children}\r\n    </ThemeProvider>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAKO,SAAS,UAAU,KAAqC;QAArC,EAAE,QAAQ,EAA2B,GAArC;IACxB,qBACE,6LAAC,mJAAA,CAAA,gBAAa;QAAC,WAAU;QAAQ,cAAa;QAAQ,cAAc;kBACjE;;;;;;AAGP;KANgB","debugId":null}}]
+}

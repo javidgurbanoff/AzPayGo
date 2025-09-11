@@ -5,7 +5,7 @@ interface InputFieldProps {
   type?: string;
   placeholder?: string;
   value: string;
-  onChange: (value: string) => void;
+  onChange: (val: string) => void;
 }
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -16,14 +16,16 @@ const InputField: React.FC<InputFieldProps> = ({
   onChange,
 }) => {
   return (
-    <div className="flex flex-col w-full">
-      <label className="text-sm font-medium mb-1">{label}</label>
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        {label}
+      </label>
       <input
         type={type}
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
       />
     </div>
   );

@@ -5,7 +5,12 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/register");
+    const registered = localStorage.getItem("registered");
+    if (registered) {
+      router.replace("/login");
+    } else {
+      router.replace("/register");
+    }
   }, [router]);
 
   return null;

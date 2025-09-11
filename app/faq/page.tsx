@@ -2,6 +2,7 @@
 
 import React from "react";
 import Navbar from "../components/ui/Navbar";
+// import BasicDemo from "../components/ui/Accordion";
 import Footer from "../features/Footer/footer";
 
 export default function Faq() {
@@ -19,6 +20,7 @@ export default function Faq() {
         </p>
 
         <div className="w-full max-w-3xl"></div>
+        {/* <BasicDemo /> */}
       </main>
 
       <Footer />

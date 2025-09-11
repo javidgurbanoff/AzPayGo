@@ -63,7 +63,7 @@ const Footer = () => {
               <a href="/tutorial">Tutorial</a>
             </li>
             <li className="hover:text-white cursor-pointer">
-              <a href="#why">AzPayGo Mobile</a>
+              <a href="/mobile">AzPayGo Mobile</a>
             </li>
             <li className="hover:text-white cursor-pointer">
               <a href="/pricing">Pricing</a>

@@ -10,7 +10,7 @@ import {
 
 import Register from "./pages/register";
 import Login from "./pages/login";
-import HomePage from "./pages/HomePage";
+// import HomePage from "./pages/HomePage";
 
 export default function AppRouter() {
   const [isClient, setIsClient] = useState(false);
@@ -29,7 +29,7 @@ export default function AppRouter() {
         <Route path="/" element={<Navigate to="/register" replace />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<HomePage />} />
+        {/* <Route path="/home" element={<HomePage />} /> */}
       </Routes>
     </Router>
   );

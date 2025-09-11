@@ -123,9 +123,12 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/moon.js [app-client] (ecmascript) <export default as Moon>"); // lightweight icons
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun.js [app-client] (ecmascript) <export default as Sun>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 function ColorModeButton() {
@@ -136,13 +139,48 @@ function ColorModeButton() {
         "ColorModeButton.useEffect": ()=>setMounted(true)
     }["ColorModeButton.useEffect"], []);
     if (!mounted) return null;
+    const isDark = resolvedTheme === "dark";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        onClick: ()=>setTheme(resolvedTheme === "dark" ? "light" : "dark"),
-        className: "px-3 py-1 rounded-md bg-gray-200 cursor-pointer dark:bg-gray-700 text-gray-900 dark:text-gray-100 transition-colors duration-300",
-        children: resolvedTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"
+        onClick: ()=>setTheme(isDark ? "light" : "dark"),
+        className: "flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-gray-800 dark:to-gray-900 text-white font-medium shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95",
+        children: isDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
+                    className: "w-5 h-5 text-yellow-300 animate-spin-slow"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/ui/color-mode.tsx",
+                    lineNumber: 24,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "Light Mode"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/ui/color-mode.tsx",
+                    lineNumber: 25,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
+                    className: "w-5 h-5 text-blue-300"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/ui/color-mode.tsx",
+                    lineNumber: 29,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "Dark Mode"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/ui/color-mode.tsx",
+                    lineNumber: 30,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true)
     }, void 0, false, {
         fileName: "[project]/app/components/ui/color-mode.tsx",
-        lineNumber: 15,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
@@ -3343,14 +3381,21 @@ const PricingCard = ()=>{
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "pt-2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                            href: "/billing",
+                                                            href: "/payment",
                                                             type: "button",
                                                             target: "_blank",
                                                             className: "appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer",
                                                             children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "w-full font-semibold text-base",
-                                                                    children: "Choose Starter"
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                        href: "/payment",
+                                                                        className: "w-full font-semibold text-base",
+                                                                        children: "Choose Pro"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/ui/PricingCard.tsx",
+                                                                        lineNumber: 106,
+                                                                        columnNumber: 25
+                                                                    }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
                                                                     lineNumber: 105,
@@ -3369,12 +3414,12 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 114,
+                                                                        lineNumber: 119,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 108,
+                                                                    lineNumber: 113,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
@@ -3415,25 +3460,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 134,
+                                                                        lineNumber: 139,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 128,
+                                                                    lineNumber: 133,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Everything in Free"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 142,
+                                                                    lineNumber: 147,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 127,
+                                                            lineNumber: 132,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3452,25 +3497,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 151,
+                                                                        lineNumber: 156,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 145,
+                                                                    lineNumber: 150,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "5,000 events / month"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 159,
+                                                                    lineNumber: 164,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 144,
+                                                            lineNumber: 149,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3489,36 +3534,36 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 168,
+                                                                        lineNumber: 173,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 162,
+                                                                    lineNumber: 167,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Unlimited seats"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 176,
+                                                                    lineNumber: 181,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 161,
+                                                            lineNumber: 166,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                    lineNumber: 126,
+                                                    lineNumber: 131,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 130,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
@@ -3557,7 +3602,7 @@ const PricingCard = ()=>{
                                                                         children: "Startup"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 189,
+                                                                        lineNumber: 194,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -3575,7 +3620,7 @@ const PricingCard = ()=>{
                                                                                 strokeLinejoin: "round"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 196,
+                                                                                lineNumber: 201,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3587,7 +3632,7 @@ const PricingCard = ()=>{
                                                                                 strokeLinejoin: "round"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 204,
+                                                                                lineNumber: 209,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3599,19 +3644,19 @@ const PricingCard = ()=>{
                                                                                 strokeLinejoin: "round"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 212,
+                                                                                lineNumber: 217,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 190,
+                                                                        lineNumber: 195,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 188,
+                                                                lineNumber: 193,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3625,7 +3670,7 @@ const PricingCard = ()=>{
                                                                                 children: "$"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 224,
+                                                                                lineNumber: 229,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3634,12 +3679,12 @@ const PricingCard = ()=>{
                                                                                     children: "16"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 226,
+                                                                                    lineNumber: 231,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 225,
+                                                                                lineNumber: 230,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3647,13 +3692,13 @@ const PricingCard = ()=>{
                                                                                 children: "per month"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 228,
+                                                                                lineNumber: 233,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 223,
+                                                                        lineNumber: 228,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3661,13 +3706,13 @@ const PricingCard = ()=>{
                                                                         children: "billed annually"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 230,
+                                                                        lineNumber: 235,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 222,
+                                                                lineNumber: 227,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3691,25 +3736,25 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 241,
+                                                                                        lineNumber: 246,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 235,
+                                                                                    lineNumber: 240,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "Everything in Starter"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 249,
+                                                                                    lineNumber: 254,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 234,
+                                                                            lineNumber: 239,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3728,25 +3773,25 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 258,
+                                                                                        lineNumber: 263,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 252,
+                                                                                    lineNumber: 257,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "20,000 events / month"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 266,
+                                                                                    lineNumber: 271,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 251,
+                                                                            lineNumber: 256,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3765,58 +3810,65 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 275,
+                                                                                        lineNumber: 280,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 269,
+                                                                                    lineNumber: 274,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "Unlimited seats"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 283,
+                                                                                    lineNumber: 288,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 268,
+                                                                            lineNumber: 273,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 233,
+                                                                    lineNumber: 238,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 232,
+                                                                lineNumber: 237,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 192,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "pt-2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                            href: "/billing",
+                                                            href: "/payment",
                                                             type: "button",
                                                             target: "_blank",
                                                             className: "appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer",
                                                             children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "w-full font-semibold text-base",
-                                                                    children: "Choose Startup"
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                        href: "/payment",
+                                                                        className: "w-full font-semibold text-base",
+                                                                        children: "Choose Startup"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/ui/PricingCard.tsx",
+                                                                        lineNumber: 301,
+                                                                        columnNumber: 25
+                                                                    }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 295,
+                                                                    lineNumber: 300,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -3832,29 +3884,29 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 304,
+                                                                        lineNumber: 314,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 298,
+                                                                    lineNumber: 308,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 289,
+                                                            lineNumber: 294,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 288,
+                                                        lineNumber: 293,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 186,
+                                                lineNumber: 191,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3878,25 +3930,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 324,
+                                                                        lineNumber: 334,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 318,
+                                                                    lineNumber: 328,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Everything in Starter"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 332,
+                                                                    lineNumber: 342,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 317,
+                                                            lineNumber: 327,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3915,25 +3967,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 341,
+                                                                        lineNumber: 351,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 335,
+                                                                    lineNumber: 345,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "20,000 events / month"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 349,
+                                                                    lineNumber: 359,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 334,
+                                                            lineNumber: 344,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3952,52 +4004,52 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 358,
+                                                                        lineNumber: 368,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 352,
+                                                                    lineNumber: 362,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Unlimited seats"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 366,
+                                                                    lineNumber: 376,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 351,
+                                                            lineNumber: 361,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                    lineNumber: 316,
+                                                    lineNumber: 326,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 315,
+                                                lineNumber: 325,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                        lineNumber: 185,
+                                        lineNumber: 190,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 189,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                lineNumber: 183,
+                                lineNumber: 188,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4019,12 +4071,12 @@ const PricingCard = ()=>{
                                                                     children: "Professional"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 379,
+                                                                    lineNumber: 389,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 378,
+                                                                lineNumber: 388,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4038,7 +4090,7 @@ const PricingCard = ()=>{
                                                                                 children: "$"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 383,
+                                                                                lineNumber: 393,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4047,12 +4099,12 @@ const PricingCard = ()=>{
                                                                                     children: "49"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 385,
+                                                                                    lineNumber: 395,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 384,
+                                                                                lineNumber: 394,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4060,13 +4112,13 @@ const PricingCard = ()=>{
                                                                                 children: "per month"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 387,
+                                                                                lineNumber: 397,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 382,
+                                                                        lineNumber: 392,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4074,13 +4126,13 @@ const PricingCard = ()=>{
                                                                         children: "billed annually"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 389,
+                                                                        lineNumber: 399,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 381,
+                                                                lineNumber: 391,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4104,25 +4156,25 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 400,
+                                                                                        lineNumber: 410,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 394,
+                                                                                    lineNumber: 404,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "Everything in Startup"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 408,
+                                                                                    lineNumber: 418,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 393,
+                                                                            lineNumber: 403,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4141,25 +4193,25 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 417,
+                                                                                        lineNumber: 427,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 411,
+                                                                                    lineNumber: 421,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "80,000 events / mo"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 425,
+                                                                                    lineNumber: 435,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 410,
+                                                                            lineNumber: 420,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4178,58 +4230,65 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 434,
+                                                                                        lineNumber: 444,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 428,
+                                                                                    lineNumber: 438,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "Unlimited seats"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 442,
+                                                                                    lineNumber: 452,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 427,
+                                                                            lineNumber: 437,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 392,
+                                                                    lineNumber: 402,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 391,
+                                                                lineNumber: 401,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 377,
+                                                        lineNumber: 387,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "pt-2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                            href: "/billing",
+                                                            href: "/payment",
                                                             type: "button",
                                                             target: "_blank",
                                                             className: "appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer",
                                                             children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "w-full font-semibold text-base",
-                                                                    children: "Choose Pro"
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                        href: "/payment",
+                                                                        className: "w-full font-semibold text-base",
+                                                                        children: "Choose Pro"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/components/ui/PricingCard.tsx",
+                                                                        lineNumber: 465,
+                                                                        columnNumber: 25
+                                                                    }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 454,
+                                                                    lineNumber: 464,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -4245,29 +4304,29 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 463,
+                                                                        lineNumber: 479,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 457,
+                                                                    lineNumber: 473,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 448,
+                                                            lineNumber: 458,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 447,
+                                                        lineNumber: 457,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 376,
+                                                lineNumber: 386,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4291,25 +4350,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 483,
+                                                                        lineNumber: 499,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 477,
+                                                                    lineNumber: 493,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Everything in Startup"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 491,
+                                                                    lineNumber: 507,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 476,
+                                                            lineNumber: 492,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4328,25 +4387,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 500,
+                                                                        lineNumber: 516,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 494,
+                                                                    lineNumber: 510,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "80,000 events / mo"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 508,
+                                                                    lineNumber: 524,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 493,
+                                                            lineNumber: 509,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4365,52 +4424,52 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 517,
+                                                                        lineNumber: 533,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 511,
+                                                                    lineNumber: 527,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Unlimited seats"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 525,
+                                                                    lineNumber: 541,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 510,
+                                                            lineNumber: 526,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                    lineNumber: 475,
+                                                    lineNumber: 491,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 474,
+                                                lineNumber: 490,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                        lineNumber: 375,
+                                        lineNumber: 385,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                    lineNumber: 374,
+                                    lineNumber: 384,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                lineNumber: 373,
+                                lineNumber: 383,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4432,12 +4491,12 @@ const PricingCard = ()=>{
                                                                     children: "Free"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 538,
+                                                                    lineNumber: 554,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 537,
+                                                                lineNumber: 553,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4451,7 +4510,7 @@ const PricingCard = ()=>{
                                                                                 children: "$"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 542,
+                                                                                lineNumber: 558,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4460,12 +4519,12 @@ const PricingCard = ()=>{
                                                                                     children: "0"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 544,
+                                                                                    lineNumber: 560,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 543,
+                                                                                lineNumber: 559,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4473,13 +4532,13 @@ const PricingCard = ()=>{
                                                                                 children: "per month"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                lineNumber: 546,
+                                                                                lineNumber: 562,
                                                                                 columnNumber: 25
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 541,
+                                                                        lineNumber: 557,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4487,13 +4546,13 @@ const PricingCard = ()=>{
                                                                         children: "billed annually"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 548,
+                                                                        lineNumber: 564,
                                                                         columnNumber: 23
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 540,
+                                                                lineNumber: 556,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4517,25 +4576,25 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 559,
+                                                                                        lineNumber: 575,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 553,
+                                                                                    lineNumber: 569,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "No credit card required"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 567,
+                                                                                    lineNumber: 583,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 552,
+                                                                            lineNumber: 568,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4554,25 +4613,25 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 576,
+                                                                                        lineNumber: 592,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 570,
+                                                                                    lineNumber: 586,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "Free forever"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 584,
+                                                                                    lineNumber: 600,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 569,
+                                                                            lineNumber: 585,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4591,25 +4650,25 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 593,
+                                                                                        lineNumber: 609,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 587,
+                                                                                    lineNumber: 603,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "3 seats"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 601,
+                                                                                    lineNumber: 617,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 586,
+                                                                            lineNumber: 602,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4628,48 +4687,48 @@ const PricingCard = ()=>{
                                                                                         strokeLinejoin: "round"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                        lineNumber: 610,
+                                                                                        lineNumber: 626,
                                                                                         columnNumber: 29
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 604,
+                                                                                    lineNumber: 620,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                     children: "200 events / month"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                                    lineNumber: 618,
+                                                                                    lineNumber: 634,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                            lineNumber: 603,
+                                                                            lineNumber: 619,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 551,
+                                                                    lineNumber: 567,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 550,
+                                                                lineNumber: 566,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 536,
+                                                        lineNumber: 552,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "pt-2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                            href: "/billing",
+                                                            href: "/",
                                                             type: "button",
                                                             target: "_blank",
                                                             className: "appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer",
@@ -4679,7 +4738,7 @@ const PricingCard = ()=>{
                                                                     children: "Choose Free"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 630,
+                                                                    lineNumber: 646,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -4695,29 +4754,29 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 639,
+                                                                        lineNumber: 655,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 633,
+                                                                    lineNumber: 649,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 624,
+                                                            lineNumber: 640,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 623,
+                                                        lineNumber: 639,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 535,
+                                                lineNumber: 551,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4741,25 +4800,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 659,
+                                                                        lineNumber: 675,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 653,
+                                                                    lineNumber: 669,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "No credit card required"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 667,
+                                                                    lineNumber: 683,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 652,
+                                                            lineNumber: 668,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4778,25 +4837,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 676,
+                                                                        lineNumber: 692,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 670,
+                                                                    lineNumber: 686,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Free forever"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 684,
+                                                                    lineNumber: 700,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 669,
+                                                            lineNumber: 685,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4815,25 +4874,25 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 693,
+                                                                        lineNumber: 709,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 687,
+                                                                    lineNumber: 703,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "3 seats"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 701,
+                                                                    lineNumber: 717,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 686,
+                                                            lineNumber: 702,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -4852,52 +4911,52 @@ const PricingCard = ()=>{
                                                                         strokeLinejoin: "round"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                        lineNumber: 710,
+                                                                        lineNumber: 726,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 704,
+                                                                    lineNumber: 720,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "200 events / month"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                    lineNumber: 718,
+                                                                    lineNumber: 734,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 703,
+                                                            lineNumber: 719,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                    lineNumber: 651,
+                                                    lineNumber: 667,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 650,
+                                                lineNumber: 666,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                        lineNumber: 534,
+                                        lineNumber: 550,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                    lineNumber: 533,
+                                    lineNumber: 549,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                lineNumber: 532,
+                                lineNumber: 548,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4916,12 +4975,12 @@ const PricingCard = ()=>{
                                                             children: "Enterprise"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 730,
+                                                            lineNumber: 746,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 729,
+                                                        lineNumber: 745,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4929,19 +4988,19 @@ const PricingCard = ()=>{
                                                         children: "Contact us for a custom quote and a custom onboarding process."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                        lineNumber: 732,
+                                                        lineNumber: 748,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 728,
+                                                lineNumber: 744,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "pt-2",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                    href: "#",
+                                                    href: "/contact",
                                                     type: "button",
                                                     className: "appearance-none inline-flex hover:shadow-2xl transition-all duration-300 hover:scale-105 items-center group space-x-2.5 bg-[#0B1F3A] text-white py-4 px-5 rounded-2xl cursor-pointer",
                                                     children: [
@@ -4950,7 +5009,7 @@ const PricingCard = ()=>{
                                                             children: "Contact Sales"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 743,
+                                                            lineNumber: 759,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -4966,39 +5025,39 @@ const PricingCard = ()=>{
                                                                 strokeLinejoin: "round"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                                lineNumber: 752,
+                                                                lineNumber: 768,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                            lineNumber: 746,
+                                                            lineNumber: 762,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                    lineNumber: 738,
+                                                    lineNumber: 754,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                                lineNumber: 737,
+                                                lineNumber: 753,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                        lineNumber: 727,
+                                        lineNumber: 743,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                    lineNumber: 726,
+                                    lineNumber: 742,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                                lineNumber: 725,
+                                lineNumber: 741,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
@@ -5015,7 +5074,7 @@ const PricingCard = ()=>{
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$features$2f$Footer$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/components/ui/PricingCard.tsx",
-                lineNumber: 767,
+                lineNumber: 783,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
