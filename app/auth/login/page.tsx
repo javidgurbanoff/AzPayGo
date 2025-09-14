@@ -1,5 +1,6 @@
+"use client";
 import React, { useState } from "react";
-import InputField from "../components/ui/InputField";
+import InputField from "@/app/components/ui/InputField";
 
 const Login: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -41,13 +42,13 @@ const Login: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="mt-6 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition"
+          className="mt-6 w-full cursor-pointer bg-[#0B1F3A] text-white py-2 rounded-lg hover:bg-[#133664] transition"
         >
           Login
         </button>
         <p className="mt-4 text-center text-sm">
           Don’t have an account?{" "}
-          <a href="/register" className="text-indigo-600 hover:underline">
+          <a href="/auth/register" className="text-[#0B1F3A] hover:underline">
             Register
           </a>
         </p>

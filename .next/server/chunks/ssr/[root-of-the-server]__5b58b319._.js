@@ -49,7 +49,7 @@ const SearchRatio = ()=>{
                     id: "query",
                     className: "input",
                     type: "search",
-                    placeholder: "Search...",
+                    placeholder: "Axtar...",
                     name: "searchbar"
                 }, void 0, false, {
                     fileName: "[project]/app/components/ui/SearchRadio.tsx",
@@ -84,7 +84,7 @@ const StyledWrapper = __TURBOPACK__imported__module__$5b$project$5d2f$node_modul
   .input {
     font-family: "Montserrat", sans-serif;
     width: 100%;
-    height: 40px; /* lowered height */
+    height: 40px;
     padding-left: 2.5rem; /* keeps space for icon */
     border: 0;
     border-radius: 8px; /* slightly smaller */
@@ -112,17 +112,16 @@ const StyledWrapper = __TURBOPACK__imported__module__$5b$project$5d2f$node_modul
 
   .input:focus-visible {
     outline: 2px solid #2f81f7;
-    outline-offset: 2px;
   }
 
   .search-icon {
     position: absolute;
-    left: 0.8rem;
+    left: 1rem;
+    fill: #bdbecb;
     width: 1rem;
     height: 1rem;
     pointer-events: none;
-    color: #bdbecb;
-    transition: color 0.2s ease;
+    z-index: 1;
   }
 
   .group:focus-within .search-icon {

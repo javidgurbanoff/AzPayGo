@@ -1,5 +1,6 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Head from "next/head";
 
 const InputField = ({
@@ -148,10 +149,10 @@ const Register: React.FC = () => {
           <button
             type="submit"
             disabled={loading}
-            className={`mt-6 w-full py-3 rounded-lg transition text-white font-medium ${
+            className={`mt-6 w-full py-3 rounded-lg cursor-pointer transition text-white font-medium ${
               loading
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-indigo-600 hover:bg-indigo-700"
+                : "bg-[#0B1F3A] hover:bg-[#133664]"
             }`}
           >
             {loading ? (
@@ -186,10 +187,10 @@ const Register: React.FC = () => {
             Already have an account?{" "}
             <a
               href="/login"
-              className="text-indigo-600 hover:underline font-medium"
+              className="text-[#0B1F3A] hover:underline font-medium"
               onClick={(e) => {
                 e.preventDefault();
-                router.push("/login");
+                router.push("/auth/login");
               }}
             >
               Login

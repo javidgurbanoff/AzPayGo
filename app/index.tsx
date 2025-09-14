@@ -1,11 +1,14 @@
+"use client";
+
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
     const registered = localStorage.getItem("registered");
+
     if (registered) {
       router.replace("/login");
     } else {

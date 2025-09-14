@@ -10,7 +10,6 @@ const Info = () => {
       </h2>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
-        {/* Feature 1 */}
         <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
           <div className="flex items-center gap-3 mb-3">
             <SiSpeedtest className="text-[#0B1F3A] text-3xl" />
@@ -24,7 +23,6 @@ const Info = () => {
           </p>
         </div>
 
-        {/* Feature 2 */}
         <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
           <div className="flex items-center gap-3 mb-3">
             <MdSecurity className="text-[#0B1F3A] text-3xl" />
@@ -36,7 +34,6 @@ const Info = () => {
           </p>
         </div>
 
-        {/* Feature 3 */}
         <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
           <div className="flex items-center gap-3 mb-3">
             <MdAttachMoney className="text-[#0B1F3A] text-3xl" />

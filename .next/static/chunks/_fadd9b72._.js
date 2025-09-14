@@ -14,7 +14,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$co
 ;
 function _templateObject() {
     const data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_tagged_template_literal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])([
-        '\n  .group {\n    display: flex;\n    align-items: center;\n    position: relative;\n    width: 100%;\n    max-width: 210px;\n\n    @media (min-width: 768px) {\n      max-width: 300px;\n    }\n  }\n\n  .input {\n    font-family: "Montserrat", sans-serif;\n    width: 100%;\n    height: 40px; /* lowered height */\n    padding-left: 2.5rem; /* keeps space for icon */\n    border: 0;\n    border-radius: 8px; /* slightly smaller */\n    background-color: #0b1f3a;\n    color: #bdbecb;\n    outline: none;\n    transition: all 0.25s ease;\n    cursor: text;\n    z-index: 0;\n    box-shadow: 0 0 0 #2b2c37, 0 0 15px -8px #000; /* softer shadow */\n  }\n\n  .input::placeholder {\n    color: #7d8590;\n  }\n\n  .input:hover {\n    box-shadow: 0 0 3px #2f81f7; /* softer hover glow */\n  }\n\n  .input:focus {\n    transform: scale(1.01); /* smaller focus scaling */\n    box-shadow: 0 0 0 1.5px #2f81f7; /* smaller focus border */\n  }\n\n  .input:focus-visible {\n    outline: 2px solid #2f81f7;\n    outline-offset: 2px;\n  }\n\n  .search-icon {\n    position: absolute;\n    left: 0.8rem;\n    width: 1rem;\n    height: 1rem;\n    pointer-events: none;\n    color: #bdbecb;\n    transition: color 0.2s ease;\n  }\n\n  .group:focus-within .search-icon {\n    color: #2f81f7;\n  }\n'
+        '\n  .group {\n    display: flex;\n    align-items: center;\n    position: relative;\n    width: 100%;\n    max-width: 210px;\n\n    @media (min-width: 768px) {\n      max-width: 300px;\n    }\n  }\n\n  .input {\n    font-family: "Montserrat", sans-serif;\n    width: 100%;\n    height: 40px;\n    padding-left: 2.5rem; /* keeps space for icon */\n    border: 0;\n    border-radius: 8px; /* slightly smaller */\n    background-color: #0b1f3a;\n    color: #bdbecb;\n    outline: none;\n    transition: all 0.25s ease;\n    cursor: text;\n    z-index: 0;\n    box-shadow: 0 0 0 #2b2c37, 0 0 15px -8px #000; /* softer shadow */\n  }\n\n  .input::placeholder {\n    color: #7d8590;\n  }\n\n  .input:hover {\n    box-shadow: 0 0 3px #2f81f7; /* softer hover glow */\n  }\n\n  .input:focus {\n    transform: scale(1.01); /* smaller focus scaling */\n    box-shadow: 0 0 0 1.5px #2f81f7; /* smaller focus border */\n  }\n\n  .input:focus-visible {\n    outline: 2px solid #2f81f7;\n  }\n\n  .search-icon {\n    position: absolute;\n    left: 1rem;\n    fill: #bdbecb;\n    width: 1rem;\n    height: 1rem;\n    pointer-events: none;\n    z-index: 1;\n  }\n\n  .group:focus-within .search-icon {\n    color: #2f81f7;\n  }\n'
     ]);
     _templateObject = function() {
         return data;
@@ -54,7 +54,7 @@ const SearchRatio = ()=>{
                     id: "query",
                     className: "input",
                     type: "search",
-                    placeholder: "Search...",
+                    placeholder: "Axtar...",
                     name: "searchbar"
                 }, void 0, false, {
                     fileName: "[project]/app/components/ui/SearchRadio.tsx",
