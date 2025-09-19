@@ -2,7 +2,7 @@
 
 import { type HTMLAttributes } from "react";
 import { RatingStars } from "@/app/components/foundations/rating-stars";
-import { cx } from "@/utils/cx";
+import { cx } from "@/lib/cx";
 
 export const Wreath = (props: HTMLAttributes<HTMLOrSVGElement>) => (
   <svg
